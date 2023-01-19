@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.5.0/pagination.min.css"
+      integrity="sha512-K1k7jSn9RDKEcn/ugqVVvWYu0bcS3q1w6m/5pQSnrj0bCfIqF6Wk49lkmckSb4wglvTP9V17LtS0q0XxYccXbg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <script defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.5.0/pagination.min.js"
+      integrity="sha512-To905O3HNAHQVrN6xCie4dwDWV0OO3lwZl4rqtCvf+4lfkbx9XlyLmSiLosdi1WWBcW+VMy4Lmu/M10R+FsOPA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"/>
+
+    <script defer src="script2.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Foodies</title>
+  </head>
+  <body background="./Image/background.jpg">
+    <header>
+      <nav class="navbar navbar-light d-flex justify-content-center  bg-light ">
+        <span class="navbar-text" style="color: black;" >
+            “La bonne cuisine est honnête, sincère et simple.” ...
+        </span>
+      </nav>
+    </header>
+    <div>
+      <div class="container" style="margin-top: 12rem;";>
+        <div class="d-flex justify-content-around mx-5">
+          <div class="input-group mb-3 mx-3">
+            <label class="input-group-text" for="areaSelection">Area:</label>
+            <select class="form-select" id="areaSelection">
+              <option value="">---- All ----</option>
+            </select>
+          </div>
+
+          <div class="input-group mb-3 mx-3">
+            <label class="input-group-text" for="categorySelection"
+              >Category:</label
+            >
+            <select class="form-select" id="categorySelection">
+              <option value="">---- All ----</option>
+            </select>
+          </div>
+          <button
+            type="button"
+            class="btn text-light w-15"
+            onclick="filterMeals()"
+            style="height: 10%; background-color: #157347" > Filter </button>
+          <button
+            type="button"
+            class="btn btn-light rounded text-dark ms-3 w-50"
+            style="background-color:  #157347; height: 10%; color: white;" >
+            <a
+              href="index.html"
+              style="text-decoration: none; color: #ffffff"
+            >
+              Search</a
+            >
+          </button>
+        </div>
+        <div class="container" id="selectResult">
+          <div
+          class="row row-cols-1 row-cols-md-3 g-4"
+            id="gallery"
+          ></div>
+          <div
+            id="pagination-container"
+            class="container d-flex justify-content-center mt-5" style="margin-bottom: 50px;"
+          ></div>
+        </div>
+      </div>
+    </div>
+       <!-- Modal -->
+<div class="modal fade" id="exampleModal"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Foodies</h1>
+        </div>
+        <div class="modal-body"  id="Modal">
+          <h5>Ingredients</h5>
+            <div id="rec-ing" class="card-text"></div>
+            <h5>Instructions</h5>
+            <p id="rec-pre" class="card-text"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success h-25 mt-2" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+</html>

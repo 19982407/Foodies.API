@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+nav {
+    margin-bottom: 40px;
+}
+.navbar-text {
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-family: "East Sea Dokdo";
+}
+body{
+    background-image: url("image/background.jpg");
+}
+#gallery {
+     margin-top: 40px;
+     padding: 30px;
+     margin-bottom: 50px;
+}
+h5 {
+    font-size: 20px;
+    font-family: "East Sea Dokdo";
+}
+h2 {
+    font-size: 20px;
+    color: black;
+}
+.pagination {
+    color: #15ff00;
+}

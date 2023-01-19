@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recette de cuisine</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link  rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">   
+        </head>
+        <body>
+        <nav class="navbar navbar-light d-flex justify-content-center  bg-light ">
+        <span class="navbar-text" style="color: black;" >
+            “La bonne cuisine est honnête, sincère et simple.” ...
+        </span>
+        </nav>
+        <div class="container">
+        <a id="bbrr" class="btn btn-success h-25 mt-2" style="margin-bottom: 30px; padding: 10px;" href="Index2.html"  target = "_self">Category & Area</a>
+        <form class="d-flex" style="width: 70%; margin-left: 13rem; margin-top: 30px; " role="search">
+      <input class="form-control m-2" type="search" placeholder="Search" id = "search-input">
+        <button type="button" class="btn btn-success h-25 mt-2" id = "search-btn">Recherche</button>
+      </form>
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="gallery" >
+    </div>
+    <div class="mt-5">
+      <ul class="pagination" style="display: flex; justify-content: center; padding-bottom: 20px;">
+          <li class="page-item">
+              <button class="page-link mx-2" id="previousButton" style="background-color: #157347; color: white;">Prévious</button>
+          </li>
+          <li class="page-item">
+              <button class="page-link" id="nextButton" style="background-color: #157347; color: white;">Next</button>
+          </li>
+      </ul>
+    </div>
+    </div>   
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Foodies</h1>
+        </div>
+        <div class="modal-body"  id="Modal">
+          <h5>Ingredients</h5>
+            <div id="rec-ing" class="card-text"></div>
+            <h5>Instructions</h5>
+            <p id="rec-pre" class="card-text"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success h-25 mt-2" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="jquery-3.6.3.min.js"></script>
+    <script src="script.js" ></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+        <script src="https://pagination.js.org/dist/2.5.0/pagination.min.js"></script>
+</body>
+</html>
